@@ -1,0 +1,23 @@
+.post_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post_btns button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #184be7;
+  color: white;
+  font-size: 18px;
+}
+
+.post_btns .post_darft_btn {
+  background-color: #26b8d9;
+  color: black;
+}
+
+.publishedPostsList {
+  list-style-type: none;
+}

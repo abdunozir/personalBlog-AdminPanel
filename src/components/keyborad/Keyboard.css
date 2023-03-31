@@ -1,0 +1,179 @@
+.keyboard {
+  min-height: 200px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* .ql-container {
+  min-height: 10em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: white;
+  border: 1px solid lightblue;
+  color: #666;
+}
+
+.ql-toolbar {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  color: aliceblue;
+  background-color: lightblue;
+} */
+
+/* edittor */
+/* 
+.RichEditor-root {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.RichEditor-editor {
+  border-top: 1px solid #ddd;
+  cursor: text;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+  margin: 0 -15px -15px;
+  padding: 15px;
+}
+
+.RichEditor-editor .public-DraftEditor-content {
+  min-height: 100px;
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+.RichEditor-editor .RichEditor-blockquote {
+  border-left: 5px solid #eee;
+  color: #666;
+  font-family: "Hoefler Text", "Georgia", serif;
+  font-style: italic;
+  margin: 16px 0;
+  padding: 10px 20px;
+}
+
+.RichEditor-editor .public-DraftStyleDefault-pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: "Inconsolata", "Menlo", "Consolas", monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.RichEditor-controls {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.RichEditor-styleButton {
+  color: #999;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+}
+
+.RichEditor-activeButton {
+  color: #5890ff;
+} */
+
+#edittor {
+  color: white;
+}
+#edittor::selection {
+  color: black;
+}
+
+.ce-toolbar__plus {
+  color: white;
+}
+.ce-toolbar__plus:hover {
+  color: black;
+}
+
+.ce-toolbar__settings-btn {
+  color: white;
+}
+.ce-toolbar__settings-btn:hover {
+  color: black;
+}
+
+.ce-inline-toolbar__buttons {
+  color: black;
+}
+
+.ce-popover__item-icon,
+.ce-popover__item-label {
+  color: black;
+}
+
+.ce-block--selected {
+  color: black;
+}
+
+.ce-paragraph::selection {
+  color: black;
+}
+
+b::selection {
+  color: black;
+}
+
+.ce-popover__custom-content {
+  color: black;
+}
+
+.ce-inline-toolbar__dropdown {
+  color: black;
+}
+
+.ce-conversion-tool {
+  color: black;
+}
+
+.cdx-notifies {
+  color: black;
+}
+
+/* .codex-editor--empty {
+    display: none;
+  } */
+
+.ce-block--focused::placeholder {
+  content: "Press Tab to see options...";
+  color: white;
+}
+
+figcaption {
+  text-align: right;
+  width: 100%;
+  font-style: italic;
+  padding-top: 20px;
+}
+
+embed {
+  padding-top: 20px;
+}
+ul {
+  list-style-type: disc;
+}
+
+code {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: lightgrey;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
