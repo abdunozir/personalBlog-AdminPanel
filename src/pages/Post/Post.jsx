@@ -27,7 +27,7 @@ export default function Post() {
       .post("https://personalblog.herokuapp.com/api/posts", {
         title: [{ ...text.blocks[0] }],
         body: text.blocks,
-        isPublished: true,
+        isPublished: published,
         tags: [],
         author: author,
       })

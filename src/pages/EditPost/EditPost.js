@@ -43,7 +43,8 @@ export default function EditPost() {
         author: author,
       })
       .then((response) => {
-        console.log(response);
+        // console.log(response);
+        window.location.href = "/";
       })
       .catch((error) => {
         console.log(error);
