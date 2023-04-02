@@ -17,6 +17,16 @@ export default function Drafts() {
         setPosts([]);
       });
   }, []);
+
+  function del(id) {
+    console.log(id);
+    axios.delete(apis.PostsApi + "/" + id).then((data) => {
+      console.log(data.data.result);
+      if (data.data.result) {
+        setPosts([...posts.filter((el) => el._id !== id)]);
+      }
+    });
+  }
   return (
     <div className="container">
       <div>
@@ -26,7 +36,7 @@ export default function Drafts() {
         <ul>
           {posts.length !== 0 ? (
             posts.map((el) => {
-              return <Post el={el} />;
+              return <Post el={el} del={() => del(el._id)} />;
             })
           ) : (
             <p>data not found...</p>

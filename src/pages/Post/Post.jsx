@@ -22,12 +22,12 @@ export default function Post() {
     };
   }, []);
 
-  const posting = () => {
+  const posting = (bool) => {
     axios
       .post("https://personalblog.herokuapp.com/api/posts", {
         title: [{ ...text.blocks[0] }],
         body: text.blocks,
-        isPublished: published,
+        isPublished: bool,
         tags: [],
         author: author,
       })
@@ -40,17 +40,14 @@ export default function Post() {
       });
   };
   function saveAsDraft() {
-    setPublished(false);
-    console.log(text.blocks);
     if (text.blocks) {
-      posting();
+      posting(false);
     }
   }
 
   function publishFunc() {
-    setPublished(true);
     if (text.blocks) {
-      posting();
+      posting(true);
     }
   }
   return (
