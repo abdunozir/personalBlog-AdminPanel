@@ -1,20 +1,39 @@
 .posts {
-  padding-top: 30px;
-  margin-bottom: 40px;
+  padding-top: 1.5em;
+  margin-bottom: 2em;
+}
+@media (max-width: 600px) {
+  .posts {
+    width: 95%;
+    padding: 0.6em;
+  }
+}
+
+@media (max-width: 470px) {
+  .posts {
+    min-width: 400px;
+  }
+}
+@media (max-width: 415px) {
+  .posts {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .posts {
+    width: 100%;
+    min-width: 200px;
+  }
 }
 
 .post_draft {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   border-bottom: 2px solid white;
   border-left: 1px solid transparent;
   border-top-left-radius: 10px;
   padding: 10px 0;
   padding-left: 10px;
-}
-
-.post_draft:hover {
-  border-left: 1px solid lightgrey;
-  transition: 0.4s;
 }
 
 .title_wrapper {
@@ -25,11 +44,12 @@
 .title_wrapper a {
   text-decoration: none;
 }
-.post_title {
+.post_draft .post_title {
   cursor: pointer;
   padding-bottom: 2px;
   color: white;
   text-decoration: none;
+  font-size: 0.9em;
 }
 
 .post_title a {
@@ -40,25 +60,25 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: 1em;
   display: none;
 }
 .post_draft:hover .action_btns {
   display: flex;
 }
 
-.action_btn_edit {
+.post_draft .action_btn_edit {
   background-color: #282c34;
   color: white;
   border: none;
-  font-size: 25px;
+  font-size: 1.4em;
   cursor: pointer;
 }
-.action_btn_del {
+.post_draft .action_btn_del {
   background-color: #282c34;
   color: rgb(211, 91, 91);
   border: none;
-  font-size: 25px;
+  font-size: 1.4em;
   cursor: pointer;
 }
 
@@ -70,8 +90,8 @@
 .tag_btns {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-bottom: 20px;
+  gap: 0.5em;
+  padding-bottom: 1em;
 }
 
 .tag_btn {
@@ -89,8 +109,8 @@
 .draft_post_more {
   color: #2780d8;
   display: block;
-  font-size: 20px;
-  padding-top: 10px;
+  font-size: 1em;
+  padding-top: 0.5em;
   text-decoration: none;
 }
 
@@ -98,22 +118,27 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 1.5em;
 }
 
 .author p {
   color: #2780d8;
   display: block;
-  font-size: 15px;
+  font-size: 0.7em;
   padding-top: 10px;
   text-decoration: none;
 }
 
 .author p span {
-  font-size: 20px;
+  font-size: 1em;
   font-style: italic;
 }
 
 .draft_post_more:hover {
   text-decoration: underline;
+}
+
+p,
+li {
+  font-size: 0.9em;
 }

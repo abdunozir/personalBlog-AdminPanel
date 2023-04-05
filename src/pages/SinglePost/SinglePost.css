@@ -1,30 +1,43 @@
 .post {
   max-width: 700px;
   width: 90%;
-  padding: 30px;
+  padding: 1.5em;
   margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+  .post {
+    width: 95%;
+    padding: 0.6em;
+  }
+}
+
+@media (max-width: 470px) {
+  .post {
+    min-width: 450px;
+  }
+}
 h1 {
-  font-size: 25px;
+  font-size: 1.6em;
   margin: 0;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 p {
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 .post_title {
-  padding-bottom: 20px;
+  padding-bottom: 1em;
 }
 
 blockquote {
   width: 90%;
-  padding-left: 10px;
+  padding-left: 0.5em;
   border-left: 2px solid red;
-  font-size: 18px;
+  font-size: 0.9em;
   font-family: "Times New Roman", Times, serif;
 }

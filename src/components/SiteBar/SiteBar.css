@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 10px;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  z-index: 100;
 }
 
 .menu_btn {
@@ -19,13 +23,23 @@
   font-size: 20px;
   transition: 0.7s all;
   padding: 0px;
+  padding-top: 30px;
   height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .siteMenu_open {
   width: 250px;
   height: 100vh;
   transition: 0.4s all;
+}
+@media (max-width: 450px) {
+  .siteMenu_open {
+    width: 100%;
+    min-width: 450px;
+  }
 }
 
 .siteMenu ul {

@@ -7,36 +7,32 @@
 body {
   background-color: #282c34;
   color: white;
+  font-size: 25px;
+}
+@media (max-width: 700px) {
+  body {
+    font-size: 20px;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 460px) {
+  body {
+    font-size: 16px;
+    transition: all 0.5s;
+  }
 }
 .App {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .App_conatiner {
   width: 100%;
-  overflow: hidden;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-@media (max-width: 1150px) {
-  .App_conatiner {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 830px) {
-  .App_conatiner {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 500px) {
-  .App_conatiner {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
 .container {
   max-width: 900px;
   width: 90%;
