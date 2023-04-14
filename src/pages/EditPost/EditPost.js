@@ -38,7 +38,7 @@ export default function EditPost() {
       .put("https://personalblog.herokuapp.com/api/posts/" + id, {
         title: [{ ...text.blocks[0] }],
         body: text.blocks,
-        isPublished: true,
+        isPublished: published,
         tags: [],
         author: author,
       })
@@ -65,7 +65,7 @@ export default function EditPost() {
     <div>
       <div className="post_btns">
         <button onClick={() => publishFunc()}>Publish</button>
-        <button className="post_darft_btn" onClick={() => saveAsDraft}>
+        <button className="post_darft_btn" onClick={() => saveAsDraft()}>
           Save as draft
         </button>
       </div>
